@@ -1,127 +1,27 @@
-# Dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Build outputs
-dist/
-dist-electron/
-build/
-
-# Environment variables
+# 環境・秘密
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.local
+project/webhook_url.txt
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Bot プロセス間ロック（複数起動時の二重実行防止用）
+.agent_bot.lock
 
-# OS files
+# ログ
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.Python
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-auto_push.log
-
-# Obsidian
-.obsidian/
-.trash/
-*.obsidian
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-
-# Temporary folders
-tmp/
-temp/
-
-# Electron specific
-out/
-
-# Database files
-*.db
-*.sqlite
-*.sqlite3
-
-# System files
-.bubblewrap/
-.cache/
-.conda/
-.config/
-.continuum/
-.cups/
-.cursor/
-.docker/
-.dropbox/
-.dvdcss/
-.electron-gyp/
-.expo/
-.gradle/
-.idlerc/
-.ipython/
-.javacpp/
-.jupyter/
-.kindle/
-.m2/
-.matplotlib/
-.npm/
-.pyenv/
-.reg.db*
-.rnd
-.rprodlx/
-.skiko/
-.streamlit/
-.swiftpm/
-.tcshrc
-.wdm/
-.wget-hsts
-.wine/
-.xonshrc
-.yarnrc
-.zprofile
-.zsh_history
-.zsh_sessions/
-.zshrc
-AndroidStudioProjects/
-Applications/
-Creative Cloud Files/
-Documents/
-Downloads/
-Dropbox/
-Library/
-LocalAppData/
-Movies/
-Music/
-OneDrive/
-Pictures/
-Public/
-Sites/
-credentials.json
-japan.geojson
-opt/
-package-lock.json
-pip
-pyinstaller
-rpro.log
-stable-diffusion-webui/
-tenpo_ido_keido.py
-winetricks
-
-
-
-
-# Ignore Smart Environment folder
-.smart-env
+# GGUF（Modelfile で参照する場合はリポジトリ外に配置推奨）
+*.gguf
