@@ -1,0 +1,9 @@
+# Qwen3-Swallow 8B を Ollama に登録する用（Hugging Face の GGUF を参照）
+# 使い方: このファイルがあるディレクトリで
+#   ollama create qwen3-swallow:8b -f Modelfile
+# 初回は GGUF のダウンロードで数分かかります。
+FROM hf.co/mmnga-o/Qwen3-Swallow-8B-SFT-v0.2-gguf:Q4_K_M
+PARAMETER temperature 0.6
+SYSTEM """
+あなたは論理的で知的な標準語を話すアシスタントです。
+"""

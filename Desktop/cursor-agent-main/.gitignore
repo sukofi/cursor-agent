@@ -1,0 +1,27 @@
+# 環境・秘密
+.env
+.env.local
+*.local
+project/webhook_url.txt
+
+# Bot プロセス間ロック（複数起動時の二重実行防止用）
+.agent_bot.lock
+
+# ログ
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.Python
+
+# OS
+.DS_Store
+Thumbs.db
+
+# GGUF（Modelfile で参照する場合はリポジトリ外に配置推奨）
+*.gguf
