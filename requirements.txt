@@ -1,0 +1,7 @@
+discord.py
+python-dotenv
+duckduckgo-search
+selenium
+ollama
+requests
+mcp
